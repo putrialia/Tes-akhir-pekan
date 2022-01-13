@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kelipatan 5</title>
+</head>
+<body>
+    <center><br><br>
+        <label>Kelipatan 5</label>
+        <input type="text" id="jumlah"></input>
+        <button onclick=submit()>Lihat</button>
+       </center>
+    <script>
+          function submit(){
+        var jumlah=document.getElementById("jumlah").value;
+
+        for(var i = jumlah; i >= 5; i--){
+            if(i % 5 == 0)
+            document.write( i + "<br>");
+            
+        }
+    }
+    </script>
+</body>
+</html>

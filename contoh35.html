@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genap ganjil</title>
+</head>
+<body>
+    <center><br><br>
+        <label>Ganjil Genap</label>
+        <input type="text" id="jumlah"></input>
+        <button onclick=submit()>Lihat</button>
+       </center>
+    <script>
+         function submit(){
+        var jumlah=document.getElementById("jumlah").value;
+
+        for(var i = jumlah; i <= 20; i++){
+            if(i % 2 == 0){
+            document.write( i + " Adalah bilangan genap <br>");
+        }
+        else{
+            document.write( i + " Adalah bilangan ganjil <br>");
+            
+        }
+    }
+}
+    </script>
+</body>
+</html>
