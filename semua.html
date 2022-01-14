@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabungan tes akhir pekan</title>
+</head>
+<body>
+    <center><br><br><br>
+    <input type="text" id="jumlah"></input>
+    <select name="pilih" id="pilih">
+        <option value="swit" id="swit">SWITCH CASE</option>
+        <option value="kelipatan2" id="kelipatan2">KELIPATAN 2</option>
+        <option value="kelipatan5" id="kelipatan5">KELIPATAN 5</option>
+        <option value="gangen" id="gangen">GANJIL GENAP</option>
+        <option value="kuadrat" id="kuadrat">KUADRAT</option>
+    </select>
+    <button onclick="submit()">SUBMIT</button>
+    <script>
+        function submit(){
+        var swit=document.getElementById("swit").value;
+        var kelipatan2=document.getElementById("kelipatan2").value;
+        var kelipatan5=document.getElementById("kelipatan5").value;
+        var gangen=document.getElementById("gangen").value;
+        var kuadrat=document.getElementById("kuadrat").value;
+        var jumlah=document.getElementById("jumlah").value;
+        var pilih=document.getElementById("pilih").value;
+         
+
+        if(pilih == "swit"){
+        var nilai = prompt('Masukan kode hari 1-7'); 
+         var nama_hari; 
+         switch(nilai){
+         case "1": nama_hari = "Senin";
+         break; 
+         case "2": nama_hari = "Selasa";
+         break;
+         case "3": nama_hari = "Rabu";
+         break; 
+         case "4": nama_hari = "Kamis";
+         break;
+         case "5": nama_hari = "Jumat";
+         break;
+         case "6": nama_hari = "Sabtu"; 
+         break;
+         case "7": nama_hari = "Minggu";
+         break; 
+         default: nama_hari = "Kode yang anda masukan salah"; 
+         } 
+         document.write("Hari "+nama_hari); 
+       }
+        
+       if(pilih == "kelipatan2"){
+            for(var i = 1; i <= jumlah; i++){
+          if(i % 2 == 0)
+            document.write( i + "<br>");
+        }
+        }
+    
+    
+    
+    if(pilih == "kelipatan5"){
+        for(var i = jumlah; i >= 5; i--){
+            if(i % 5 == 0)
+            document.write( i + "<br>");
+            
+        }
+}
+    if(pilih == "gangen"){
+    for(var i = jumlah; i <= 20; i++){
+            if(i % 2 == 0){
+            document.write( i + " Adalah bilangan genap <br>");
+        }
+        else{
+            document.write( i + " Adalah bilangan ganjil <br>");
+        
+        }
+    }
+}
+       if(pilih == "kuadrat"){
+       for(var i = 1 ; i <= jumlah; i++){
+            if(i % 2 == 1){
+            hasil = i * i ;
+            document.write( hasil + "<br>");
+            }
+        if(i % 2 == 0){
+            hasil = i * i ;
+            document.write( hasil + "<br>");
+        }
+    
+       }
+      
+        }
+    }
+    
+    </script>
+    
+    <style>
+        body{
+                   background-image: url(brown.jpg) ;
+                 }
+                 a{
+                   text-decoration: none;
+                   color: black;
+                 }
+    </style>
+</center>
+</body>
+</html>

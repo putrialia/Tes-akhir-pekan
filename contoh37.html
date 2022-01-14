@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>genap ganjil</title>
+    <title>pengulangan kuadrat</title>
 </head>
 <body>
     <center><br><br>
-        <label>Ganjil Genap</label>
-        <input type="text" id="jumlah"></input>
-        <button onclick=submit()>Lihat</button>
+        <label>Pengulangan Kuadrat</label>
+        <input type="text" id="bilangan"></input>
+        <button onclick="submit()">Lihat</button>
        </center>
     <script>
          function submit(){
-        var jumlah=document.getElementById("jumlah").value;
+        var bilangan=document.getElementById("bilangan").value;
 
-        for(var i = jumlah; i <= 20; i++){
-            if(i % 2 == 0){
-            document.write( i + " Adalah bilangan genap <br>");
+        for(var i = 1 ; i <= bilangan; i++){
+            if(i % 2 == 1){
+            hasil = i * i ;
+            document.write( hasil + "<br>");
         }
-        else{
-            document.write( i + " Adalah bilangan ganjil <br>");
+        if(i % 2 == 0){
+            hasil = i * i ;
+            document.write( hasil + "<br>");
             
         }
     }
 }
     </script>
-    <style>
+     <style>
         body{
                    background-image: url(brown.jpg) ;
                  }
